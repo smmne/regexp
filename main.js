@@ -6,4 +6,5 @@ const str = `
   abbcccdddd
 `;
 
-console.log(str.match(/\.$/gim));
+console.log(str.match(/.{1,}(?=@)/g));
+console.log(str.match(/.{1,}(?<=@)/g));
